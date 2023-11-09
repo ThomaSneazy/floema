@@ -35,7 +35,8 @@
     "webpack-merge": "^5.10.0"
   },
   "dependencies": {
-    "@prismicio/client": "^7.3.1",
+    "@prismicio/client": "^4.0.0",
+    "@prismicio/helpers": "^2.3.9",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^11.0.0",
     "dotenv": "^16.3.1",
@@ -43,6 +44,7 @@
     "node-fetch": "^3.3.2",
     "nodemon": "^3.0.1",
     "prismic-dom": "^2.2.7",
-    "pug": "^3.0.2"
+    "pug": "^3.0.2",
+    "ua-parser-js": "^1.0.37"
   }
 }
