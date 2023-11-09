@@ -59,6 +59,11 @@ app.get('/about', async (req, res) => {
       const [meta, about] = results
 
       // console.log(meta, about);
+      console.log(about.data.body);
+
+      about.data.gallery.forEach(media => {
+        console.log(media);
+      });
 
       res.render('pages/about', {
         about,
