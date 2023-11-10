@@ -26,7 +26,7 @@ block content
               figure.about__content__media
                 .about__content__media__image(alt=section.primary.image.alt src=section.primary.image.url)
 
-        if section.slice.type == 'highlight'
+        if section.slice_type == 'highlight'
           section.about__highlight
             .about__highlight__wrapper
             if section.primary.label
@@ -36,4 +36,11 @@ block content
 
             each media in section.items
               figure.about__highlight__media
-                .about__highlight__media__image(alt=section.primary.image.alt src=section.primary.image.url)
+                img.about__highlight__media__image(alt=media.image.alt src=media.image.url)
+
+        if section.slice_type == 'gallery'
+          section.about__gallery
+          .about__gallery__wrapper
+            each media in section.items
+              figure.about__gallery__media
+                img.about__gallery__media__image(alt=media.image.alt src=media.image.url)
