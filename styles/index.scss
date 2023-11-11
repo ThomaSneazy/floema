@@ -1,5 +1,11 @@
-$color-white: #fff;
+@import './base/reset.scss';
+@import './pages/about/about.scss';
+@import './pages/about/content.scss';
+@import './pages/about/gallery.scss';
+@import './pages/about/highlight.scss';
 
-.class{
-  color: $color-white;
-}
+@import './pages/collections/collections.scss';
+
+@import './pages/details/details.scss';
+
+@import './pages/home/home.scss';
