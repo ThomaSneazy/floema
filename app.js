@@ -42,7 +42,7 @@ const initApi = async (req) => {
 
 
 const handleLinkResolver = doc => {
-  console.log(doc);
+  // console.log(doc);
   if (doc.type === 'product') {
     return `/detail/${doc.uid}`
   }
@@ -106,7 +106,7 @@ app.get("/", async (req, res) => {
     fetchLinks: 'product.image'
   })
 
-  console.log(home);
+  // console.log(home);
 
   res.render('pages/home', {
     ...defaults,
